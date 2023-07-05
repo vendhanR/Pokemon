@@ -2,6 +2,8 @@ import React, { useContext} from "react";
 import PokemonList from "../PokemonList/PokemonList";
 import "./Main.css";
 import { PokeContext } from "../../App";
+import Header from "../Header/Header";
+import About from './../About/About';
 
 const Main = () => {
   const {
@@ -19,13 +21,14 @@ const Main = () => {
 
   const handleSearch = () => {
     if (!pokemonName) return;
-    searchPokemon();
+    console.log(searchPokemon());
   };
 
   return (
     <>
       <div>
-        <div className="container serche-pokemon">
+      <Header />
+        <div className="container-fluid serche-pokemon">
           <div className="search-wrapper">
             <input
               placeholder="Search..."
@@ -115,6 +118,7 @@ const Main = () => {
             </div>
           </>
         )}
+           <About />
       </div>
     </>
   );

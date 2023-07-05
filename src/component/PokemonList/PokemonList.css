@@ -2,7 +2,7 @@
 .pokemon-card{
     width: 15rem;
     height: 15rem;
-    box-shadow: 0 3px 16px  #aea9ce;
+    box-shadow: 0 3px 16px  #737278;
     transition: all 0.1s ease-in-out;
     border-radius: 8px;
     display: flex;
@@ -19,7 +19,7 @@ img{
 
 .pokemon-card:hover{
     transform: scale(1.07);
-    box-shadow: 0 0 6px 1px #7e75c6;
+    box-shadow: 0 0 6px 1px #667bb5;
 }
 
 .btn-view{

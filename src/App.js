@@ -1,10 +1,9 @@
 import React, { createContext, useEffect, useState } from "react";
-import Header from "./component/Header/Header";
 import Main from "./component/Main/Main";
-import About from "./component/About/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PokemonDetails from "./component/PokemonDetails/PokemonDetails";
 import axios from "axios";
+import Error from "./component/Error/Error";
 
 export const PokeContext = createContext();
 
@@ -46,11 +45,16 @@ function App() {
   };
 
   const searchPokemon = async () => {
-    await axios
+    try {
+      await axios
       .get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
       .then((res) => {
         setPokemon(res.data);
       });
+    } catch (error) {
+      console.log(error.response.data)
+    }
+    
   };
 
   return (
@@ -73,12 +77,14 @@ function App() {
           }}
         >
           <BrowserRouter>
-            <Header />
+            
             <Routes>
               <Route path="/pokemon" element={<Main />} />
               <Route path="/pokemonDetails" element={<PokemonDetails />} />
+              <Route path="*" element={<Error />} />
             </Routes>
-            <About />
+              
+         
           </BrowserRouter>
         </PokeContext.Provider>
       </div>

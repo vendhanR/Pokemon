@@ -10,7 +10,7 @@ const Header = () => {
           style={{ justifyContent: "space-around", alignItems: "normal" }}
         >
           <div className="nav-left">
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" href="/Pokemon">
               <img className="pokemon-logo" src={pokemon} alt="pokemlog" />
             </a>
           </div>
@@ -32,13 +32,13 @@ const Header = () => {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <a className="nav-link" href="/Pokemon">
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#footer">
-                    Conatct
+                    Contact
                   </a>
                 </li>
               </ul>

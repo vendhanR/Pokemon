@@ -1,0 +1,27 @@
+.error-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-wrapper{
+    border: 1px solid #345454;
+    height: 17rem;
+    width: 20rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.error-wrapper p{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+.error-wrapper a {
+    justify-content: center;
+    text-decoration: underline;
+    color:#619EF1;
+}
