@@ -1,0 +1,29 @@
+.footer{
+    background-color: dodgerblue;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4133B7  ;
+    flex-direction: column;
+    color: #fff;
+}
+
+.linkedin-container,.mail-container{
+    color: white;
+    margin: 1rem;
+}
+.footer-mail input{
+    width: 28rem;
+}
+
+.mailto{
+    display:block;
+    width:100px;
+    height:20px;
+  }
+
+.footer-links{
+    display: flex;
+}

@@ -1,0 +1,66 @@
+.details-container{
+    min-height: 82vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.ability-heading{
+    color: #003399;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+.pokemon-img{
+    width: 20rem;
+}
+
+
+
+.ability-content{
+    color: #00628B;
+    text-align: center;
+}
+.abilities{
+    width: 10rem;
+}
+
+.stats{
+    display: flex;
+}
+
+.stats-container{
+    width: 10rem;
+}
+
+.stats-container p{
+    width: 5rem;
+    margin: 2px;
+    color: #00628B;
+    text-align: center;
+}
+
+.stat-heading{
+    color: #003399;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.back-btn{
+    margin-left: 20px;
+    border: none;
+    padding:10px 30px;
+    background-color: inherit;
+}
+
+@media screen and (max-width :750px) {
+    .details-container{
+        flex-direction: column;
+    }
+    .pokemon-img-container{
+
+        position: relative;
+        float: inline-start;
+    }
+}
