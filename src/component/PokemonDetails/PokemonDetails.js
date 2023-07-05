@@ -13,7 +13,7 @@ const PokemonDetails = () => {
     <>
       {pokemonDetails ? (
         <>
-          <button className="back-btn" onClick={() => { navigate("/")}}>
+          <button className="back-btn" onClick={() => { navigate("/pokemon")}}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="56"
