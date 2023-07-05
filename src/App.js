@@ -75,7 +75,7 @@ function App() {
           <BrowserRouter>
             <Header />
             <Routes>
-              <Route path="/" element={<Main />} />
+              <Route path="/pokemon" element={<Main />} />
               <Route path="/pokemonDetails" element={<PokemonDetails />} />
             </Routes>
             <About />
